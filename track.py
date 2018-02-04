@@ -45,6 +45,7 @@ bpy.data.objects[CAMERABOTTOM].select = False
 bpy.data.objects[TRACK].select = True
 # NOPE bpy.context.user_preferences.edit.keyframe_new_interpolation_type ='LINEAR'
 # NOPE bpy.ops.anim.keyframe_insert_menu(type='Rotation')
+bpy.context.scene.frame_current = 0
 bpy.data.objects[TRACK].keyframe_insert(data_path='rotation_euler', frame=(bpy.context.scene.frame_current))
 bpy.context.scene.frame_end = 360
 bpy.context.scene.frame_current = 360
