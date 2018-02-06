@@ -24,7 +24,8 @@ done
 Will loop through all the cameras and for each camera loop through all the materials uncluding 'unset', which simply does not over ride the materials.
 So this will create
 
--C068_Camera.bottom_LL_Clay.avi0001-0360.mkv
+```
+C068_Camera.bottom_LL_Clay.avi0001-0360.mkv
 C068_Camera.bottom_LL_Glass.avi0001-0360.mkv
 C068_Camera.bottom_LL_WireHold.avi0001-0360.mkv
 C068_Camera.bottom_LL_WireTrans.avi0001-0360.mkv
@@ -34,6 +35,7 @@ C068_Camera.top_LL_Glass.avi0001-0360.mkv
 C068_Camera.top_LL_WireHold.avi0001-0360.mkv
 C068_Camera.top_LL_WireTrans.avi0001-0360.mkv
 C068_Camera.top_unset.avi0001-0360.mkv
+```
 
 I have also added a new file render_final.py that can be swapped in the last part of the command for render.py that will set a higher resolution and samples.
 
