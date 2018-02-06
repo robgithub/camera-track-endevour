@@ -3,7 +3,7 @@
 # increased resolution and samples etc
 import bpy
 
-FILEFORMAT='FFMPEG' # 'PNG'
+FILEFORMAT = 'FFMPEG' # 'PNG'
 
 bpy.context.scene.render.resolution_x = 1920
 bpy.context.scene.render.resolution_y = 1080
@@ -21,13 +21,17 @@ bpy.context.scene.render.image_settings.compression = 90
 #bpy.context.scene.render.stamp_background = (0,0,0,1)
 
 bpy.context.scene.render.use_antialiasing = True
+bpy.context.scene.cycles.use_animated_seed = True
 bpy.context.scene.cycles.progressive = 'PATH'
 bpy.context.scene.cycles.samples = 500
-bpy.context.scene.cycles.max_bounces = 1
-bpy.context.scene.cycles.min_bounces = 1
-bpy.context.scene.cycles.glossy_bounces = 1
-bpy.context.scene.cycles.transmission_bounces = 1
-bpy.context.scene.cycles.volume_bounces = 1
+bpy.context.scene.cycles.sample_clamp_direct = 1.0
+bpy.context.scene.cycles.sample_clamp_indirect = 1.0
+bpy.context.scene.cycles.max_bounces = 12
+bpy.context.scene.cycles.min_bounces = 3
+bpy.context.scene.cycles.diffuse_bounces = 4
+bpy.context.scene.cycles.glossy_bounces = 4
+bpy.context.scene.cycles.transmission_bounces = 12
+bpy.context.scene.cycles.volume_bounces = 0
 bpy.context.scene.cycles.transparent_max_bounces = 1
 bpy.context.scene.cycles.transparent_min_bounces = 1
 bpy.context.scene.cycles.use_progressive_refine = True
