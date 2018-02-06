@@ -24,7 +24,7 @@ done
 Will loop through all the cameras and for each camera loop through all the materials uncluding 'unset', which simply does not over ride the materials.
 So this will create
 
-C068_Camera.bottom_LL_Clay.avi0001-0360.mkv
+-C068_Camera.bottom_LL_Clay.avi0001-0360.mkv
 C068_Camera.bottom_LL_Glass.avi0001-0360.mkv
 C068_Camera.bottom_LL_WireHold.avi0001-0360.mkv
 C068_Camera.bottom_LL_WireTrans.avi0001-0360.mkv
